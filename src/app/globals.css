@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hero-section {
+  @apply relative w-full h-screen bg-black flex;
+}
+
+.left-content {
+  @apply w-1/2 flex flex-col justify-center items-start text-white px-8 space-y-4;
+}
+
+.right-content {
+  @apply w-1/2 relative;
+}
+
+.btn-primary {
+	@apply py-3 px-6 bg-gradient-to-r from-yellow-400 to-yellow-500 text-white font-bold rounded-full shadow-lg transition-transform duration-300;
+  }
+  
+  .btn-primary:hover {
+	@apply scale-110 shadow-yellow-400/50;
+  }
+
+
+  .star-layer {
+	background-repeat: repeat;
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 200%;
+	height: 200%;
+	pointer-events: none;
+  }
+  
